@@ -24,11 +24,14 @@ nav a:hover{color:var(--green)}
 .lang{display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
 .lang button{border:0;background:none;padding:5px 11px;font:500 .75rem Inter,sans-serif;color:var(--muted);cursor:pointer}
 .lang button.on{background:var(--green);color:#fff}
-.hero{padding:72px 0 56px}
+.hero{padding:64px 0 48px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+@media(max-width:860px){.hero{grid-template-columns:1fr;gap:30px;padding:48px 0 36px}}
+.shot{margin:0}
+.shot img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:6px;display:block}
 .eyebrow{font-size:.85rem;color:var(--muted);margin:0 0 14px}
-h1{font:300 clamp(2.6rem,7vw,4.6rem)/1.05 Fraunces,serif;margin:0 0 22px}
+h1{font:300 clamp(2.4rem,6vw,3.9rem)/1.06 Fraunces,serif;margin:0 0 22px}
 h1 em{display:block;color:var(--green);font-weight:400}
-.lead{font-size:1.15rem;max-width:620px;color:#34423a}
+.lead{font-size:1.1rem;max-width:620px;color:#34423a}
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 .btn{display:inline-block;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:500;font-size:.95rem}
 .btn.gold{background:var(--gold);color:#1f2a24}
@@ -46,6 +49,9 @@ ul.ticks{list-style:none;padding:0;margin:0;columns:2;column-gap:28px}
 @media(max-width:520px){ul.ticks{columns:1}}
 ul.ticks li{padding:4px 0 4px 24px;position:relative;break-inside:avoid}
 ul.ticks li:before{content:"";position:absolute;left:0;top:13px;width:10px;height:2px;background:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}}
+.grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:5px;display:block}
 .rules p{margin:0 0 10px}
 .note{background:#f0ede2;border-left:3px solid var(--gold);padding:16px 20px;margin-top:22px;font-size:.95rem}
 footer{padding:36px 0 56px;color:var(--muted);font-size:.85rem}
@@ -53,80 +59,97 @@ footer{padding:36px 0 56px;color:var(--muted);font-size:.85rem}
 </head>
 <body>
 <header><div class="wrap">
-  <a class="logo" href="#top">Casa Alonso y Carmen</a>
-  <nav>
-    <a href="#casa" data-i="nav_casa"></a><a href="#entorno" data-i="nav_env"></a><a href="#normas" data-i="nav_rules"></a><a href="#reservar" data-i="nav_book"></a>
-    <div class="lang"><button data-l="es" class="on">ES</button><button data-l="en">EN</button><button data-l="fr">FR</button><button data-l="de">DE</button></div>
-  </nav>
+<a class="logo" href="#top">Casa Alonso y Carmen</a>
+<nav>
+<a href="#casa" data-i="nav_casa"></a><a href="#fotos" data-i="nav_fotos"></a><a href="#entorno" data-i="nav_env"></a><a href="#normas" data-i="nav_rules"></a><a href="#reservar" data-i="nav_book"></a>
+<div class="lang"><button data-l="es" class="on">ES</button><button data-l="en">EN</button><button data-l="fr">FR</button><button data-l="de">DE</button></div>
+</nav>
 </div></header>
 
 <main id="top">
 <div class="wrap hero">
-  <p class="eyebrow" data-i="eyebrow"></p>
-  <h1><span data-i="h1a"></span><em data-i="h1b"></em></h1>
-  <p class="lead" data-i="lead"></p>
-  <div class="btns">
-    <a class="btn gold" href="https://www.booking.com/hotel/es/casa-rural-en-el-parque-nacional-de-garajonay.html" target="_blank" rel="noopener" data-i="cta1"></a>
-    <a class="btn line" href="#casa" data-i="cta2"></a>
-  </div>
+<div>
+<p class="eyebrow" data-i="eyebrow"></p>
+<h1><span data-i="h1a"></span><em data-i="h1b"></em></h1>
+<p class="lead" data-i="lead"></p>
+<div class="btns">
+<a class="btn gold" href="https://www.booking.com/hotel/es/casa-rural-en-el-parque-nacional-de-garajonay.html" target="_blank" rel="noopener" data-i="cta1"></a>
+<a class="btn line" href="#casa" data-i="cta2"></a>
+</div>
+</div>
+<figure class="shot"><img src="img/dormitorio.jpg" width="1024" height="768" alt="" data-alt="img_alt"></figure>
 </div>
 
 <div class="wrap"><div class="stats">
-  <div><b>100 m²</b><span data-i="s1"></span></div>
-  <div><b>4</b><span data-i="s2"></span></div>
-  <div><b>2</b><span data-i="s3"></span></div>
-  <div><b>0 €</b><span data-i="s4"></span></div>
-  <div><b>8,1</b><span data-i="s5"></span></div>
+<div><b>100 m²</b><span data-i="s1"></span></div>
+<div><b>4</b><span data-i="s2"></span></div>
+<div><b>2</b><span data-i="s3"></span></div>
+<div><b>0 €</b><span data-i="s4"></span></div>
+<div><b>8,1</b><span data-i="s5"></span></div>
 </div></div>
 
 <section id="casa"><div class="wrap">
-  <h2 data-i="casa_h"></h2>
-  <div class="cols">
-    <div>
-      <p data-i="casa_p1"></p>
-      <p data-i="casa_p2"></p>
-      <p data-i="casa_p3"></p>
-    </div>
-    <ul class="ticks" id="amen"></ul>
-  </div>
+<h2 data-i="casa_h"></h2>
+<div class="cols">
+<div>
+<p data-i="casa_p1"></p>
+<p data-i="casa_p2"></p>
+<p data-i="casa_p3"></p>
+</div>
+<ul class="ticks" id="amen"></ul>
+</div>
+</div></section>
+
+<section id="fotos"><div class="wrap">
+<h2 data-i="fotos_h"></h2>
+<div class="grid">
+<img src="img/fachada.jpg" width="576" height="768" style="object-position:center 72%" alt="" data-alt="a_fachada">
+<img src="img/salon.jpg" width="1024" height="768" alt="" data-alt="a_salon">
+<img src="img/cocina.jpg" width="1024" height="768" alt="" data-alt="a_cocina">
+<img src="img/dormitorio-2.jpg" width="1024" height="768" alt="" data-alt="a_dorm2">
+<img src="img/rincon.jpg" width="1024" height="768" alt="" data-alt="a_rincon">
+<img src="img/bano.jpg" width="1024" height="768" alt="" data-alt="a_bano">
+<img src="img/terraza.jpg" width="1024" height="768" alt="" data-alt="a_terraza">
+</div>
 </div></section>
 
 <section id="entorno"><div class="wrap">
-  <h2 data-i="env_h"></h2>
-  <div class="cols">
-    <div><p data-i="env_p1"></p><p data-i="env_p2"></p></div>
-    <div><p data-i="env_p3"></p><div class="note" data-i="env_note"></div></div>
-  </div>
+<h2 data-i="env_h"></h2>
+<div class="cols">
+<div><p data-i="env_p1"></p><p data-i="env_p2"></p></div>
+<div><p data-i="env_p3"></p><div class="note" data-i="env_note"></div></div>
+</div>
 </div></section>
 
 <section id="normas"><div class="wrap">
-  <h2 data-i="rules_h"></h2>
-  <div class="cols rules">
-    <div><p data-i="r1"></p><p data-i="r2"></p><p data-i="r3"></p></div>
-    <div><p data-i="r4"></p><p data-i="r5"></p><p data-i="r6"></p></div>
-  </div>
+<h2 data-i="rules_h"></h2>
+<div class="cols rules">
+<div><p data-i="r1"></p><p data-i="r2"></p><p data-i="r3"></p></div>
+<div><p data-i="r4"></p><p data-i="r5"></p><p data-i="r6"></p></div>
+</div>
 </div></section>
 
 <section id="reservar"><div class="wrap">
-  <h2 data-i="book_h"></h2>
-  <p data-i="book_p" style="max-width:620px"></p>
-  <div class="btns"><a class="btn gold" href="https://www.booking.com/hotel/es/casa-rural-en-el-parque-nacional-de-garajonay.html" target="_blank" rel="noopener" data-i="cta1"></a></div>
+<h2 data-i="book_h"></h2>
+<p data-i="book_p" style="max-width:620px"></p>
+<div class="btns"><a class="btn gold" href="https://www.booking.com/hotel/es/casa-rural-en-el-parque-nacional-de-garajonay.html" target="_blank" rel="noopener" data-i="cta1"></a></div>
 </div></section>
 </main>
 
 <footer><div class="wrap">
-  <div data-i="foot1"></div>
-  <div>Licencia VV-38-6-0000474</div>
+<div data-i="foot1"></div>
+<div>Licencia VV-38-6-0000474</div>
 </div></footer>
 
 <script>
 const T={
-es:{nav_casa:"La casa",nav_env:"El entorno",nav_rules:"Normas",nav_book:"Reservar",
+es:{nav_casa:"La casa",nav_fotos:"Fotos",nav_env:"El entorno",nav_rules:"Normas",nav_book:"Reservar",
 eyebrow:"Casa rural en La Gomera",h1a:"Casa",h1b:"Alonso y Carmen",
 lead:"Cien metros cuadrados para ti solo, en un barrio tranquilo junto al Parque Nacional de Garajonay. Dos dormitorios, jardín, terraza y chimenea, con aparcamiento privado incluido.",
 cta1:"Consultar disponibilidad",cta2:"Ver la casa",
+img_alt:"Dormitorio de la casa, con cama doble y paredes encaladas",a_fachada:"Fachada de la casa, con la montaña detrás",a_salon:"Sala de estar con chimenea de leña y sofá",a_cocina:"Cocina con mesa de comedor para cuatro",a_dorm2:"Segundo dormitorio con dos camas individuales",a_rincon:"Rincón de lectura con sofá y estanterías",a_bano:"Baño con ducha",a_terraza:"Mesa y sillas en la terraza",
 s1:"para ti solo",s2:"huéspedes",s3:"dormitorios",s4:"aparcamiento privado",s5:"en Booking.com (37 opiniones)",
-casa_h:"La casa",
+fotos_h:"Fotos",casa_h:"La casa",
 casa_p1:"Una casa independiente de 100 m² de la que disfrutas entera. Tiene dos dormitorios, una sala de estar, cocina equipada y un baño con ducha.",
 casa_p2:"Las camas son una doble, dos individuales y un sofá cama, para hasta 4 personas. Incluimos ropa de cama y toallas.",
 casa_p3:"Fuera hay jardín, terraza y patio, y cuando refresca puedes encender la chimenea.",
@@ -141,12 +164,13 @@ r1:"<b>Entrada:</b> desde las 15:00. Avísanos de tu hora de llegada con antelac
 r4:"<b>No se puede fumar</b> en la casa.",r5:"<b>No se admiten mascotas.</b>",r6:"<b>No se permiten fiestas ni eventos.</b>",
 book_h:"Reservar",book_p:"Reservamos a través de Booking.com, donde ves las fechas libres y los precios. Tras reservar, recibes la dirección exacta y el teléfono de la casa en tu confirmación.",
 foot1:"Casa número 35, Serpa, Agulo, La Gomera."},
-en:{nav_casa:"The house",nav_env:"Surroundings",nav_rules:"House rules",nav_book:"Book",
+en:{nav_casa:"The house",nav_fotos:"Photos",nav_env:"Surroundings",nav_rules:"House rules",nav_book:"Book",
 eyebrow:"Country house on La Gomera",h1a:"Casa",h1b:"Alonso y Carmen",
 lead:"A hundred square metres all to yourself, in a quiet neighbourhood next to Garajonay National Park. Two bedrooms, garden, terrace and a fireplace, with private parking included.",
 cta1:"Check availability",cta2:"See the house",
+img_alt:"Bedroom with a double bed and whitewashed walls",a_fachada:"Front of the house, with the mountain behind",a_salon:"Living room with a wood stove and sofa",a_cocina:"Kitchen with a dining table for four",a_dorm2:"Second bedroom with two single beds",a_rincon:"Reading corner with a sofa and shelves",a_bano:"Bathroom with a shower",a_terraza:"Table and chairs on the terrace",
 s1:"all to yourself",s2:"guests",s3:"bedrooms",s4:"private parking",s5:"on Booking.com (37 reviews)",
-casa_h:"The house",
+fotos_h:"Photos",casa_h:"The house",
 casa_p1:"A detached 100 m² house that you have entirely to yourself. It has two bedrooms, a living room, a fully equipped kitchen and a bathroom with a shower.",
 casa_p2:"The beds are one double, two single and a sofa bed, for up to 4 people. Bed linen and towels are included.",
 casa_p3:"Outside there is a garden, a terrace and a patio, and when it gets cool you can light the fireplace.",
@@ -161,12 +185,13 @@ r1:"<b>Check-in:</b> from 15:00. Please tell us your arrival time in advance.",r
 r4:"<b>No smoking</b> in the house.",r5:"<b>No pets.</b>",r6:"<b>No parties or events.</b>",
 book_h:"Book",book_p:"We take bookings through Booking.com, where you can see free dates and prices. After booking, you receive the exact address and phone number of the house in your confirmation.",
 foot1:"Casa número 35, Serpa, Agulo, La Gomera."},
-fr:{nav_casa:"La maison",nav_env:"Les environs",nav_rules:"Règlement",nav_book:"Réserver",
+fr:{nav_casa:"La maison",nav_fotos:"Photos",nav_env:"Les environs",nav_rules:"Règlement",nav_book:"Réserver",
 eyebrow:"Maison rurale à La Gomera",h1a:"Casa",h1b:"Alonso y Carmen",
 lead:"Cent mètres carrés rien que pour vous, dans un quartier tranquille à côté du parc national de Garajonay. Deux chambres, jardin, terrasse et cheminée, avec parking privé inclus.",
 cta1:"Voir les disponibilités",cta2:"Voir la maison",
+img_alt:"Chambre avec lit double et murs blanchis à la chaux",a_fachada:"Façade de la maison, avec la montagne derrière",a_salon:"Salon avec poêle à bois et canapé",a_cocina:"Cuisine avec table pour quatre",a_dorm2:"Deuxième chambre avec deux lits simples",a_rincon:"Coin lecture avec canapé et étagères",a_bano:"Salle de bain avec douche",a_terraza:"Table et chaises sur la terrasse",
 s1:"rien que pour vous",s2:"voyageurs",s3:"chambres",s4:"parking privé",s5:"sur Booking.com (37 avis)",
-casa_h:"La maison",
+fotos_h:"Photos",casa_h:"La maison",
 casa_p1:"Une maison indépendante de 100 m² dont vous profitez en entier. Elle compte deux chambres, un salon, une cuisine équipée et une salle de bain avec douche.",
 casa_p2:"Les lits sont un lit double, deux lits simples et un canapé-lit, pour 4 personnes au maximum. Le linge de lit et les serviettes sont fournis.",
 casa_p3:"Dehors, il y a un jardin, une terrasse et un patio, et quand il fait frais vous pouvez allumer la cheminée.",
@@ -181,12 +206,13 @@ r1:"<b>Arrivée :</b> à partir de 15 h 00. Merci de nous indiquer votre heure d
 r4:"<b>Interdit de fumer</b> dans la maison.",r5:"<b>Animaux non admis.</b>",r6:"<b>Pas de fêtes ni d’événements.</b>",
 book_h:"Réserver",book_p:"Nous prenons les réservations via Booking.com, où vous voyez les dates libres et les prix. Après la réservation, vous recevez l’adresse exacte et le téléphone de la maison dans votre confirmation.",
 foot1:"Casa número 35, Serpa, Agulo, La Gomera."},
-de:{nav_casa:"Das Haus",nav_env:"Umgebung",nav_rules:"Hausregeln",nav_book:"Buchen",
+de:{nav_casa:"Das Haus",nav_fotos:"Fotos",nav_env:"Umgebung",nav_rules:"Hausregeln",nav_book:"Buchen",
 eyebrow:"Landhaus auf La Gomera",h1a:"Casa",h1b:"Alonso y Carmen",
 lead:"Hundert Quadratmeter ganz für Sie, in ruhiger Lage neben dem Nationalpark Garajonay. Zwei Schlafzimmer, Garten, Terrasse und Kamin, mit privatem Parkplatz inklusive.",
 cta1:"Verfügbarkeit prüfen",cta2:"Das Haus ansehen",
+img_alt:"Schlafzimmer mit Doppelbett und weiß gekalkten Wänden",a_fachada:"Vorderseite des Hauses, dahinter der Berg",a_salon:"Wohnzimmer mit Holzofen und Sofa",a_cocina:"Küche mit Esstisch für vier",a_dorm2:"Zweites Schlafzimmer mit zwei Einzelbetten",a_rincon:"Leseecke mit Sofa und Regalen",a_bano:"Badezimmer mit Dusche",a_terraza:"Tisch und Stühle auf der Terrasse",
 s1:"ganz für Sie",s2:"Gäste",s3:"Schlafzimmer",s4:"privater Parkplatz",s5:"auf Booking.com (37 Bewertungen)",
-casa_h:"Das Haus",
+fotos_h:"Fotos",casa_h:"Das Haus",
 casa_p1:"Ein freistehendes Haus mit 100 m², das Sie ganz für sich haben. Es hat zwei Schlafzimmer, ein Wohnzimmer, eine voll ausgestattete Küche und ein Bad mit Dusche.",
 casa_p2:"Die Betten sind ein Doppelbett, zwei Einzelbetten und ein Schlafsofa, für bis zu 4 Personen. Bettwäsche und Handtücher sind inklusive.",
 casa_p3:"Draußen gibt es Garten, Terrasse und Patio, und wenn es kühl wird, können Sie den Kamin anzünden.",
@@ -203,11 +229,12 @@ book_h:"Buchen",book_p:"Wir nehmen Buchungen über Booking.com an, wo Sie freie 
 foot1:"Casa número 35, Serpa, Agulo, La Gomera."}
 };
 function setLang(l){
-  const d=T[l];document.documentElement.lang=l;
-  document.querySelectorAll('[data-i]').forEach(e=>{const k=e.dataset.i;if(d[k]!==undefined)e.innerHTML=d[k]});
-  document.getElementById('amen').innerHTML=d.amen.map(x=>'<li>'+x+'</li>').join('');
-  document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
-  try{localStorage.setItem('lang',l)}catch(e){}
+const d=T[l];document.documentElement.lang=l;
+document.querySelectorAll('[data-i]').forEach(e=>{const k=e.dataset.i;if(d[k]!==undefined)e.innerHTML=d[k]});
+document.querySelectorAll('[data-alt]').forEach(e=>{const k=e.dataset.alt;if(d[k]!==undefined)e.alt=d[k]});
+document.getElementById('amen').innerHTML=d.amen.map(x=>'<li>'+x+'</li>').join('');
+document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+try{localStorage.setItem('lang',l)}catch(e){}
 }
 document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
 let start='es';try{start=localStorage.getItem('lang')||((navigator.language||'es').slice(0,2))}catch(e){}
