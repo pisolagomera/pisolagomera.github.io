@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa Alonso y Carmen · Casa rural en La Gomera</title>
+<meta name="description" content="Casa rural de 100 m² junto al Parque Nacional de Garajonay, La Gomera. Jardín, terraza, chimenea y aparcamiento gratuito.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f3;--ink:#1f2a24;--muted:#5d6b63;--green:#2c5545;--gold:#d3a02f;--line:#cdd8cf}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif}
+a{color:var(--green)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.logo{font-family:Fraunces,serif;font-size:1.3rem;color:var(--green);text-decoration:none}
+nav{display:flex;gap:22px;align-items:center;font-size:.9rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--green)}
+.lang{display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.lang button{border:0;background:none;padding:5px 11px;font:500 .75rem Inter,sans-serif;color:var(--muted);cursor:pointer}
+.lang button.on{background:var(--green);color:#fff}
+.hero{padding:72px 0 56px}
+.eyebrow{font-size:.85rem;color:var(--muted);margin:0 0 14px}
+h1{font:300 clamp(2.6rem,7vw,4.6rem)/1.05 Fraunces,serif;margin:0 0 22px}
+h1 em{display:block;color:var(--green);font-weight:400}
+.lead{font-size:1.15rem;max-width:620px;color:#34423a}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:500;font-size:.95rem}
+.btn.gold{background:var(--gold);color:#1f2a24}
+.btn.line{border:1px solid var(--green);color:var(--green)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:8px 0 0}
+.stats div{padding:22px 18px 18px;border-left:1px solid var(--line)}
+.stats div:first-child{border-left:0;padding-left:0}
+.stats b{display:block;font:400 2rem Fraunces,serif;color:var(--green)}
+.stats span{font-size:.85rem;color:var(--muted)}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+h2{font:300 2.1rem/1.15 Fraunces,serif;margin:0 0 20px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media(max-width:760px){.cols{grid-template-columns:1fr;gap:28px}nav a{display:none}}
+ul.ticks{list-style:none;padding:0;margin:0;columns:2;column-gap:28px}
+@media(max-width:520px){ul.ticks{columns:1}}
+ul.ticks li{padding:4px 0 4px 24px;position:relative;break-inside:avoid}
+ul.ticks li:before{content:"";position:absolute;left:0;top:13px;width:10px;height:2px;background:var(--gold)}
+.rules p{margin:0 0 10px}
+.note{background:#f0ede2;border-left:3px solid var(--gold);padding:16px 20px;margin-top:22px;font-size:.95rem}
+footer{padding:36px 0 56px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">Casa Alonso y Carmen</a>
+  <nav>
+    <a href="#casa" data-i="nav_casa"></a><a href="#entorno" data-i="nav_env"></a><a href="#normas" data-i="nav_rules"></a><a href="#reservar" data-i="nav_book"></a>
+    <div class="lang"><button data-l="es" class="on">ES</button><button data-l="en">EN</button><button data-l="fr">FR</button><button data-l="de">DE</button></div>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+  <p class="eyebrow" data-i="eyebrow"></p>
+  <h1><span data-i="h1a"></span><em data-i="h1b"></em></h1>
+  <p class="lead" data-i="lead"></p>
+  <div class="btns">
+    <a class="btn gold" href="https://www.booking.com/hotel/es/casa-rural-en-el-parque-nacional-de-garajonay.html" target="_blank" rel="noopener" data-i="cta1"></a>
+    <a class="btn line" href="#casa" data-i="cta2"></a>
+  </div>
+</div>
+
+<div class="wrap"><div class="stats">
+  <div><b>100 m²</b><span data-i="s1"></span></div>
+  <div><b>4</b><span data-i="s2"></span></div>
+  <div><b>2</b><span data-i="s3"></span></div>
+  <div><b>0 €</b><span data-i="s4"></span></div>
+  <div><b>8,1</b><span data-i="s5"></span></div>
+</div></div>
+
+<section id="casa"><div class="wrap">
+  <h2 data-i="casa_h"></h2>
+  <div class="cols">
+    <div>
+      <p data-i="casa_p1"></p>
+      <p data-i="casa_p2"></p>
+      <p data-i="casa_p3"></p>
+    </div>
+    <ul class="ticks" id="amen"></ul>
+  </div>
+</div></section>
+
+<section id="entorno"><div class="wrap">
+  <h2 data-i="env_h"></h2>
+  <div class="cols">
+    <div><p data-i="env_p1"></p><p data-i="env_p2"></p></div>
+    <div><p data-i="env_p3"></p><div class="note" data-i="env_note"></div></div>
+  </div>
+</div></section>
+
+<section id="normas"><div class="wrap">
+  <h2 data-i="rules_h"></h2>
+  <div class="cols rules">
+    <div><p data-i="r1"></p><p data-i="r2"></p><p data-i="r3"></p></div>
+    <div><p data-i="r4"></p><p data-i="r5"></p><p data-i="r6"></p></div>
+  </div>
+</div></section>
+
+<section id="reservar"><div class="wrap">
+  <h2 data-i="book_h"></h2>
+  <p data-i="book_p" style="max-width:620px"></p>
+  <div class="btns"><a class="btn gold" href="https://www.booking.com/hotel/es/casa-rural-en-el-parque-nacional-de-garajonay.html" target="_blank" rel="noopener" data-i="cta1"></a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div data-i="foot1"></div>
+  <div>Licencia VV-38-6-0000474</div>
+</div></footer>
+
+<script>
+const T={
+es:{nav_casa:"La casa",nav_env:"El entorno",nav_rules:"Normas",nav_book:"Reservar",
+eyebrow:"Casa rural en La Gomera",h1a:"Casa",h1b:"Alonso y Carmen",
+lead:"Cien metros cuadrados para ti solo, en un barrio tranquilo junto al Parque Nacional de Garajonay. Dos dormitorios, jardín, terraza y chimenea, con aparcamiento privado incluido.",
+cta1:"Consultar disponibilidad",cta2:"Ver la casa",
+s1:"para ti solo",s2:"huéspedes",s3:"dormitorios",s4:"aparcamiento privado",s5:"en Booking.com (37 opiniones)",
+casa_h:"La casa",
+casa_p1:"Una casa independiente de 100 m² de la que disfrutas entera. Tiene dos dormitorios, una sala de estar, cocina equipada y un baño con ducha.",
+casa_p2:"Las camas son una doble, dos individuales y un sofá cama, para hasta 4 personas. Incluimos ropa de cama y toallas.",
+casa_p3:"Fuera hay jardín, terraza y patio, y cuando refresca puedes encender la chimenea.",
+amen:["Cocina equipada","Nevera, microondas y vitrocerámica","Cafetera / tetera","Lavadora","Chimenea","Terraza, patio y jardín","Wifi gratis","TV de pantalla plana","Ropa de cama y toallas","Secador de pelo y plancha","Mosquitera","Entrada privada","Aparcamiento privado gratis","Extintor"],
+env_h:"El entorno",
+env_p1:"La casa está en Serpa, Agulo, a pocos kilómetros del Parque Nacional de Garajonay y de la presa de Meriga. Es un lugar para caminar, descansar y desconectar.",
+env_p2:"El Parque Nacional de Garajonay queda a unos 7 km y el aeropuerto de La Gomera a unos 28 km.",
+env_p3:"Hay un restaurante cercano de cocina española, el Roque Blanco. Es un barrio muy tranquilo, ideal para parejas, aventureros y familias.",
+env_note:"Para alojarte aquí es recomendable ir en coche. El aparcamiento es gratuito y está a tu disposición.",
+rules_h:"Normas de la casa",
+r1:"<b>Entrada:</b> desde las 15:00. Avísanos de tu hora de llegada con antelación.",r2:"<b>Salida:</b> hasta las 11:00.",r3:"<b>Niños:</b> se admiten de cualquier edad.",
+r4:"<b>No se puede fumar</b> en la casa.",r5:"<b>No se admiten mascotas.</b>",r6:"<b>No se permiten fiestas ni eventos.</b>",
+book_h:"Reservar",book_p:"Reservamos a través de Booking.com, donde ves las fechas libres y los precios. Tras reservar, recibes la dirección exacta y el teléfono de la casa en tu confirmación.",
+foot1:"Casa número 35, Serpa, Agulo, La Gomera."},
+en:{nav_casa:"The house",nav_env:"Surroundings",nav_rules:"House rules",nav_book:"Book",
+eyebrow:"Country house on La Gomera",h1a:"Casa",h1b:"Alonso y Carmen",
+lead:"A hundred square metres all to yourself, in a quiet neighbourhood next to Garajonay National Park. Two bedrooms, garden, terrace and a fireplace, with private parking included.",
+cta1:"Check availability",cta2:"See the house",
+s1:"all to yourself",s2:"guests",s3:"bedrooms",s4:"private parking",s5:"on Booking.com (37 reviews)",
+casa_h:"The house",
+casa_p1:"A detached 100 m² house that you have entirely to yourself. It has two bedrooms, a living room, a fully equipped kitchen and a bathroom with a shower.",
+casa_p2:"The beds are one double, two single and a sofa bed, for up to 4 people. Bed linen and towels are included.",
+casa_p3:"Outside there is a garden, a terrace and a patio, and when it gets cool you can light the fireplace.",
+amen:["Equipped kitchen","Fridge, microwave and hob","Tea / coffee maker","Washing machine","Fireplace","Terrace, patio and garden","Free wifi","Flat-screen TV","Bed linen and towels","Hairdryer and iron","Mosquito net","Private entrance","Free private parking","Fire extinguisher"],
+env_h:"Surroundings",
+env_p1:"The house is in Serpa, Agulo, a few kilometres from Garajonay National Park and the Meriga dam. It is a place to walk, rest and disconnect.",
+env_p2:"Garajonay National Park is about 7 km away and La Gomera airport about 28 km.",
+env_p3:"There is a nearby Spanish restaurant, Roque Blanco. The neighbourhood is very quiet, ideal for couples, adventurers and families.",
+env_note:"A car is recommended for staying here. Parking is free and at your disposal.",
+rules_h:"House rules",
+r1:"<b>Check-in:</b> from 15:00. Please tell us your arrival time in advance.",r2:"<b>Check-out:</b> until 11:00.",r3:"<b>Children:</b> all ages are welcome.",
+r4:"<b>No smoking</b> in the house.",r5:"<b>No pets.</b>",r6:"<b>No parties or events.</b>",
+book_h:"Book",book_p:"We take bookings through Booking.com, where you can see free dates and prices. After booking, you receive the exact address and phone number of the house in your confirmation.",
+foot1:"Casa número 35, Serpa, Agulo, La Gomera."},
+fr:{nav_casa:"La maison",nav_env:"Les environs",nav_rules:"Règlement",nav_book:"Réserver",
+eyebrow:"Maison rurale à La Gomera",h1a:"Casa",h1b:"Alonso y Carmen",
+lead:"Cent mètres carrés rien que pour vous, dans un quartier tranquille à côté du parc national de Garajonay. Deux chambres, jardin, terrasse et cheminée, avec parking privé inclus.",
+cta1:"Voir les disponibilités",cta2:"Voir la maison",
+s1:"rien que pour vous",s2:"voyageurs",s3:"chambres",s4:"parking privé",s5:"sur Booking.com (37 avis)",
+casa_h:"La maison",
+casa_p1:"Une maison indépendante de 100 m² dont vous profitez en entier. Elle compte deux chambres, un salon, une cuisine équipée et une salle de bain avec douche.",
+casa_p2:"Les lits sont un lit double, deux lits simples et un canapé-lit, pour 4 personnes au maximum. Le linge de lit et les serviettes sont fournis.",
+casa_p3:"Dehors, il y a un jardin, une terrasse et un patio, et quand il fait frais vous pouvez allumer la cheminée.",
+amen:["Cuisine équipée","Réfrigérateur, micro-ondes et plaques de cuisson","Machine à café / bouilloire à thé","Lave-linge","Cheminée","Terrasse, patio et jardin","Wifi gratuit","Télévision à écran plat","Linge de lit et serviettes","Sèche-cheveux et fer à repasser","Moustiquaire","Entrée privée","Parking privé gratuit","Extincteur"],
+env_h:"Les environs",
+env_p1:"La maison se trouve à Serpa, Agulo, à quelques kilomètres du parc national de Garajonay et du barrage de Meriga. C’est un lieu pour marcher, se reposer et déconnecter.",
+env_p2:"Le parc national de Garajonay est à environ 7 km et l’aéroport de La Gomera à environ 28 km.",
+env_p3:"Un restaurant de cuisine espagnole, le Roque Blanco, se trouve à proximité. Le quartier est très calme, idéal pour les couples, les aventuriers et les familles.",
+env_note:"Pour séjourner ici, il est recommandé d’avoir une voiture. Le parking est gratuit et à votre disposition.",
+rules_h:"Règlement",
+r1:"<b>Arrivée :</b> à partir de 15 h 00. Merci de nous indiquer votre heure d’arrivée à l’avance.",r2:"<b>Départ :</b> jusqu’à 11 h 00.",r3:"<b>Enfants :</b> acceptés à tout âge.",
+r4:"<b>Interdit de fumer</b> dans la maison.",r5:"<b>Animaux non admis.</b>",r6:"<b>Pas de fêtes ni d’événements.</b>",
+book_h:"Réserver",book_p:"Nous prenons les réservations via Booking.com, où vous voyez les dates libres et les prix. Après la réservation, vous recevez l’adresse exacte et le téléphone de la maison dans votre confirmation.",
+foot1:"Casa número 35, Serpa, Agulo, La Gomera."},
+de:{nav_casa:"Das Haus",nav_env:"Umgebung",nav_rules:"Hausregeln",nav_book:"Buchen",
+eyebrow:"Landhaus auf La Gomera",h1a:"Casa",h1b:"Alonso y Carmen",
+lead:"Hundert Quadratmeter ganz für Sie, in ruhiger Lage neben dem Nationalpark Garajonay. Zwei Schlafzimmer, Garten, Terrasse und Kamin, mit privatem Parkplatz inklusive.",
+cta1:"Verfügbarkeit prüfen",cta2:"Das Haus ansehen",
+s1:"ganz für Sie",s2:"Gäste",s3:"Schlafzimmer",s4:"privater Parkplatz",s5:"auf Booking.com (37 Bewertungen)",
+casa_h:"Das Haus",
+casa_p1:"Ein freistehendes Haus mit 100 m², das Sie ganz für sich haben. Es hat zwei Schlafzimmer, ein Wohnzimmer, eine voll ausgestattete Küche und ein Bad mit Dusche.",
+casa_p2:"Die Betten sind ein Doppelbett, zwei Einzelbetten und ein Schlafsofa, für bis zu 4 Personen. Bettwäsche und Handtücher sind inklusive.",
+casa_p3:"Draußen gibt es Garten, Terrasse und Patio, und wenn es kühl wird, können Sie den Kamin anzünden.",
+amen:["Voll ausgestattete Küche","Kühlschrank, Mikrowelle und Herd","Tee- / Kaffeemaschine","Waschmaschine","Kamin","Terrasse, Patio und Garten","Kostenloses WLAN","Flachbildfernseher","Bettwäsche und Handtücher","Haartrockner und Bügeleisen","Moskitonetz","Privater Eingang","Kostenloser privater Parkplatz","Feuerlöscher"],
+env_h:"Umgebung",
+env_p1:"Das Haus liegt in Serpa, Agulo, wenige Kilometer vom Nationalpark Garajonay und vom Meriga-Stausee entfernt. Ein Ort zum Wandern, Ausruhen und Abschalten.",
+env_p2:"Der Nationalpark Garajonay ist etwa 7 km entfernt, der Flughafen von La Gomera etwa 28 km.",
+env_p3:"In der Nähe gibt es ein spanisches Restaurant, das Roque Blanco. Die Gegend ist sehr ruhig, ideal für Paare, Abenteurer und Familien.",
+env_note:"Für den Aufenthalt wird ein Auto empfohlen. Der Parkplatz ist kostenlos und steht Ihnen zur Verfügung.",
+rules_h:"Hausregeln",
+r1:"<b>Check-in:</b> ab 15:00 Uhr. Bitte teilen Sie uns Ihre Ankunftszeit im Voraus mit.",r2:"<b>Check-out:</b> bis 11:00 Uhr.",r3:"<b>Kinder:</b> Kinder jeden Alters sind willkommen.",
+r4:"<b>Rauchen verboten</b> im Haus.",r5:"<b>Keine Haustiere.</b>",r6:"<b>Keine Partys oder Veranstaltungen.</b>",
+book_h:"Buchen",book_p:"Wir nehmen Buchungen über Booking.com an, wo Sie freie Termine und Preise sehen. Nach der Buchung erhalten Sie die genaue Adresse und Telefonnummer des Hauses in Ihrer Bestätigung.",
+foot1:"Casa número 35, Serpa, Agulo, La Gomera."}
+};
+function setLang(l){
+  const d=T[l];document.documentElement.lang=l;
+  document.querySelectorAll('[data-i]').forEach(e=>{const k=e.dataset.i;if(d[k]!==undefined)e.innerHTML=d[k]});
+  document.getElementById('amen').innerHTML=d.amen.map(x=>'<li>'+x+'</li>').join('');
+  document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+  try{localStorage.setItem('lang',l)}catch(e){}
+}
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+let start='es';try{start=localStorage.getItem('lang')||((navigator.language||'es').slice(0,2))}catch(e){}
+setLang(T[start]?start:'es');
+</script>
+</body>
+</html>
